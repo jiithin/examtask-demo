@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Caprasimo&family=Instrument+Serif&family=Kanit:wght@300&family=Lexend:wght@900&family=Lobster&family=Pacifico&family=Roboto:wght@100&family=Tektur&family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <title>BURGER HERE</title>
+
+    <style>
+
+.form-style input{
+	border:0;
+	height:50px;
+	border-radius:0;
+border-bottom:1px solid #ebebeb;	
+}
+.form-style input:focus{
+border-bottom:1px solid #007bff;	
+box-shadow:none;
+outline:0;
+background-color:#ebebeb;	
+}
+.sideline {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+	color:#ccc;
+}
+button{
+height:50px;	
+}
+.sideline:before,
+.sideline:after {
+    content: '';
+    border-top: 1px solid #ebebeb;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+}
+
+.sideline:after {
+    margin: 0 0 0 20px;
+}
+
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+ 
+  color: #fff;
+}
+
+.grid-box {
+  margin: 10px;
+  
+  padding: 10px;
+}
+
+
+.navbar {
+    background-color: #d0ff002d;
+}
+/* button */
+.button {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  padding-block: 0.5rem;
+  padding-inline: 1.25rem;
+  background-color: rgb(239, 243, 7);
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffff;
+  gap: 10px;
+  font-weight: bold;
+  border: 3px solid #ffffff4d;
+  outline: none;
+  overflow: hidden;
+  font-size: 12px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  border-color: #fff9;
+}
+
+.button:hover .icon {
+  transform: translate(4px);
+}
+
+.button:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+
+  60% {
+    left: 100%;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+/*  */
+.navbar{
+background-color: #d0ff0000;
+}
+
+
+  /* Rectangle 1 */
+
+
+form a {
+  position: relative; 
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 43px;
+  background: #333;
+  border-radius: 50%;
+  font-size: 10px;
+  color: #666;
+  transition: .5s;
+}
+
+form a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #ffee10;
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+form a:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ffee10;
+}
+
+form a:hover {
+  color: #ffee10;
+  box-shadow: 0 0 5px #ffee10;
+  text-shadow: 0 0 5px #ffee10;
+}
+
+/* nav-text hover */
+
+.collapse ul li a:hover{
+  text-shadow:  0  0 5px #d0ff00;
+}
+/*  */
+
+/* carousal-butoon */
+
+.btn {
+  color: rgb(204, 247, 12);
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid rgb(209, 255, 3);
+  padding: 10px 20px;
+  font-size: 17px;
+  font-weight: bold;
+  background: transparent;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.btn:hover {
+  color: rgb(9, 243, 41);
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  top: 0;
+  left: -40px;
+  transform: skewX(45deg);
+  background-color: purple;
+  z-index: -1;
+  transition: all 1s;
+}
+
+.btn:hover::before {
+  width: 160%;
+}
+/*  */
+
+
+/* cards */
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+ 
+  background: #003;
+  color: #dedede;
+  
+   margin: 0px;
+  padding: 0px;
+}
+
+.wrapper {
+  max-width: 20em;
+  margin: 0 auto;
+}
+
+.scroll-cards {
+  counter-reset: card;
+  position: relative;
+  display: block;
+  padding-bottom: 120vh;
+}
+
+.scroll-cards > .scroll-cards_item + .scroll-cards_item {
+  margin-top: 40vh;
+}
+
+.scroll-cards h1 {
+  position: sticky;
+  top: 2rem;
+  font-size: 2em;
+  margin: 0 0 0.5em;
+}
+
+.scroll-cards__item {
+  --offset: 0.5em;
+  color: #000;
+  position: sticky;
+  top: max(16vh, 10em);
+  padding: 2em 1.5em;
+  min-height: 19em;
+  background: #fff;
+  box-shadow: 0 2px 40px rgba(0, 0, 0, 0.1);
+  width: calc(100% - 5 * var(--offset));
+}
+
+h2 {
+  font-size: 1.25em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+p {
+  font-size: 1.25em;
+  line-height: 1.5;
+}
+
+/* animatn */
+.center {
+  text-align: center;
+}
+
+section {
+  height: 180vh;   
+}
+
+/* NAVIGATION */
+nav {
+  width: 90%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 5px 0;
+  box-shadow: 0px 5px 0px #dedede;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #555;
+}
+
+
+/* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+nav.fill ul li a {
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
+/* Circle */
+nav.circle ul li a {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+nav.circle ul li a:after {
+  display: block;
+  position: absolute;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '.';
+  color: transparent;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background: transparent;
+}
+nav.circle ul li a:hover:after {
+  -webkit-animation: circle 1.5s ease-in forwards;
+}
+
+/* SHIFT */
+nav.shift ul li a {
+  position:relative;
+  z-index: 1;
+}
+nav.shift ul li a:hover {
+  color: #91640F;
+}
+nav.shift ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: #F1C40F;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+nav.shift ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+
+
+/* Keyframes */
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: #333;
+  }
+}
+
+/* Keyframes */
+@-webkit-keyframes circle {
+  0% {
+    width: 1px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 1px;
+    z-index: -1;
+    background: #eee;
+    border-radius: 100%;
+  }
+  100% {
+    background: #aaa;
+    height: 5000%;
+    width: 5000%;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 0;
+  }
+}
+
+
+/*  */
+
+/* zoom in */
+
+
+.zoom {
+ 
+ 
+  transition: transform .1s;
+  width:100%;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(0.1); /* IE 9 */
+  -webkit-transform: scale(1.); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+
+
+/*  */
+
+/* card animation */
+.ball {
+            height: 12rem;
+            width: 12rem;
+            background-color: white;
+            border-radius: 50%;
+            margin-top: 20rem;
+        }
+
+/*  */
+
+/* menu */
+
+
+
+:root{
+    --golden : #ecf007;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.menu-title{
+    margin-top: 3rem;
+}
+.menu-title  span{
+    font-size: 2rem;
+    font-weight: 700;
+    width: 10%;
+    color: #182433;
+    border-bottom: 5px solid var(--golden);
+}
+.catagories ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-top: 30px;
+}
+.catagories ul li {
+    margin: 10px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    border: 2px solid var(--golden);
+    border-radius: 5px;
+    color: var(--golden)
+}
+.catagories ul li:hover{
+    background-color: var(--golden);
+    color: white;
+}
+/* content */
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content .c-image {
+    width: 1000px;
+    height: 160px;
+    border: 3px solid var(--golden);
+    border-radius: 5px;
+}
+.content .c-image img {
+    width: 100%;
+    height: 100%;
+}
+.content .t-n-p{
+    margin-left: 20px;
+    width: 1000px;
+}
+.content .t-n-p .header{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted #182433;
+  padding: 0px 5px;
+}
+.content .t-n-p .title {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.content .t-n-p .price {
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: var(--golden);
+    word-spacing: 2px;
+}
+.content .t-n-p .des p{
+    font-size: 0.9rem;
+}
+
+/*  */
+
+/* bg-images */
+
+
+/*  */
+    </style>
+ 
+
+
+</head>
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg  sticky ">
+    <div class="container-fluid">
+      <a class="navbar-brand fs-2 text-white " href="#" style="font-family: 'Lobster', sans-serif;">KINGS FOOD</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active fw-bolder text-white " aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bolder text-white " href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fw-bolder text-white " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled fw-bolder text-white " href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex fa-solid fa-solid-effect-1">
+
+          <div class="text-white mt-2 me-3">
+
+            <a style="color: aliceblue;" href="http://"><i class="fa-solid fa-magnifying-glass fa-xl"></i></a>
+            
+          </div>
+
+          <div class="text-white mt-2 me-3">
+           <a style="color: aliceblue;" href="http://"><i class="fa-solid fa-cart-shopping fa-xl"></i></a> 
+          </div>
+          
+          <div class="text-white mt-2 me-3 ">
+            <a style="color: aliceblue;" href="http://"><i class="fa-solid fa-user fa-xl"></i></a>
+          </div>
+
+        
+        </form> 
+         <button class="button" >
+            ORDER NOW
+            <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+              <path clip-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" fill-rule="evenodd"></path>
+            </svg>
+          </button>
+      </div>
+    </div>
+  </nav>
+
+
+  
+  <!--  -->
+  <!-- carousal slider -->
+
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators" style="margin-right: 80%;">
+      <button type="button hidden" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active  bg-warning" style="border-radius: 45%; width: 10px; padding-top: 10px;" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button hidden" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="bg-warning" style="border-radius: 45%; width: 10px; padding-top: 10px;"  aria-label="Slide 2"></button>
+      <button type="button hidden" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="bg-warning" style="border-radius: 45%; width: 10px;  padding-top: 10px;" aria-label="Slide 3"></button>
+    </div>
+   
+    <div class="carousel-inner"> 
+        <img src="https://wallpapercave.com/wp/wp4056193.jpg" class="d-block " width="100%" height="100%" style="margin-top: -300px;" alt="...">
+        <div class="carousel-item active    ">
+      
+        
+          <div class="carousel-caption  d-md " style="margin-bottom: 199px;bottom: 26px;padding-top: 10.25rem;padding-bottom: 1.25rem;padding-right: -68px;margin-right: 399px; margin-left: -20px;">
+         
+            <h5 class=" text-warning" style="  font-family: 'Lobster', sans-serif; float: left; margin-top: -150px; font-size: 40px; margin-left: 120px; ">Fast Food Restaureant</h5><br>
+            <p class="text-justify fw-light " style=" margin-left: -10px; margin-top: -100px; text-align: left;"> Pastry dessert  Biscuit pastry marshmallow candy canes marzipan cake croissant. Dragée gingerbread cake liquorice dragée sweet danish shortbread. Candy canes cake muffin bonbon donut. Lollipop chupa chups jelly-o dessert gummies. Apple pie jelly</p>
+            
+            <button class="btn rounded rounded-4" style="margin-right:565px ;" >
+              BUY
+            </button>
+          </div>
+          
+        </div>
+      </div>
+      <div class="carousel-item  ">
+      
+        
+        <div class="carousel-caption  d-md " style="margin-bottom: 199px;bottom: 26px;padding-top: 10.25rem;padding-bottom: 1.25rem;padding-right: -68px;margin-right: 399px; margin-left: -20px;">
+       
+          <h5 class=" text-warning" style="  font-family: 'Lobster', sans-serif; float: left; margin-top: -150px; font-size: 40px; margin-left: 120px; ">Fast Food Restaureant</h5><br>
+          <p class="text-justify fw-light " style=" margin-left: -10px; margin-top: -100px; text-align: left;"> Pastry dessert  Biscuit pastry marshmallow candy canes marzipan cake croissant. Dragée gingerbread cake liquorice dragée sweet danish shortbread. Candy canes cake muffin bonbon donut. Lollipop chupa chups jelly-o dessert gummies. Apple pie jelly</p>
+          
+          <button style="margin-right:565px ;" class="btn rounded rounded-4">
+            BUY
+          </button>
+        </div>
+        
+      </div>
+     
+      <div class="carousel-item  ">
+      
+        
+        <div class="carousel-caption  d-md " style="margin-bottom: 199px;bottom: 26px;padding-top: 10.25rem;padding-bottom: 1.25rem;padding-right: -68px;margin-right: 399px; margin-left: -20px;">
+       
+          <h5 class=" text-warning" style="  font-family: 'Lobster', sans-serif; float: left; margin-top: -150px; font-size: 40px; margin-left: 120px; ">Fast Food Restaureant</h5><br>
+          <p class="text-justify fw-light " style=" margin-left: -10px; margin-top: -100px; text-align: left;"> Pastry dessert  Biscuit pastry marshmallow candy canes marzipan cake croissant. Dragée gingerbread cake liquorice dragée sweet danish shortbread. Candy canes cake muffin bonbon donut. Lollipop chupa chups jelly-o dessert gummies. Apple pie jelly</p>
+          
+          <button style="margin-right:565px ;" class="btn rounded rounded-4">
+            BUY
+          </button>
+        </div>
+        
+      </div>
+
+    </div>
+    <button class="carousel-control-prev "  type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev" style="margin-top: 300px;">
+      <span class="carousel-control-prev-icon rounded-4 " aria-hidden="true"></span>
+      <span class="visually-hidden rounded-4">Previous</span>
+    </button>
+    <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next" style="margin-top: 300px;" >
+      <span class="carousel-control-next-icon " aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!--  -->
+
+  <!-- animation -->
+
+ 
+ 
+
+    <div class="grid-container">
+
+   
+    <div class="grid m-4 p-4">
+      <div class="card" style="background: rgb(2,0,36);
+      background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(229,231,198,1) 35%, rgb(18, 19, 19) 100%);">
+        <div class="card-body">
+          <div><img src="https://www.simplyrecipes.com/thmb/pjYMLcsKHkr8D8tYixmaFNxppPw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__09__easy-pepperoni-pizza-lead-3-8f256746d649404baa36a44d271329bc.jpg" style="border-radius: 50%; float: left; margin: 20px; border-radius: 2px solid black;" height="130px" width="140px" alt="" srcset=""></div>
+          <h5 class="card-title fw-bolder">Special title treatment</h5>
+          <p class="card-text fw-bolder">With supporting text below as a natural lead-in to additional content.</p>
+          <a  class="btn btn-primary">BUY NOW</a>
+        </div>
+      </div>
+    </div>
+    <div class="grid m-4 p-4">
+      <div class="card rounded rounded-3" style="background: rgb(2,0,36);background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(155,161,17,1) 35%, rgba(0,212,255,1) 100%);">
+        <div class="card-body">
+          <div><img src="https://www.foodandwine.com/thmb/DI29Houjc_ccAtFKly0BbVsusHc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/crispy-comte-cheesburgers-FT-RECIPE0921-6166c6552b7148e8a8561f7765ddf20b.jpg" style="border-radius: 50%; float: left; margin: 20px;" height="130px" width="140px" alt="" srcset=""></div>
+          <h5 class="card-title fw-bolder">Special title treatment</h5>
+          <p class="card-text fw-bolder">With supporting text below as a natural lead-in to additional content.</p>
+          <a  class="btn btn-primary">BUY NOW</a>
+        </div>
+      </div>
+    </div>
+
+   
+  </div>
+ 
+
+
+  <!--  -->
+
+  <!-- MENU -->
+
+  <div class="container-fluid mt-4">
+
+    <h1 class="text-center fw-bolder " style="font-family: 'Lobster', sans-serif;">OUR MENU</h1>
+
+  </div>
+  <!--  -->
+
+  <!-- menus -->
+
+  <!--  -->
+  <div class="container" style="max-width: 1000px;">
+    <!-- Menu title -->
+    <div class="menu-title text-center">
+      
+    </div>
+    <!-- catagories -->
+    <div class="catagories text-center">
+        <ul>
+            <li class="fw-bold">All</li>
+            <li class="fw-bold">Breakfast</li>
+            <li class="fw-bold">Lunch</li>
+            <li class="fw-bold">Shakes</li>
+            <li class="fw-bold">Dinner</li>
+        </ul>
+    </div>
+
+    <div class="row food-container">
+        
+            <!-- content div -->
+
+    </div>
+    
+    <div class="btn rounded rounded-4" style=" font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-left: 370px;">View MORE</div>
+
+</div>
+
+<!-- banner -->
+
+
+<div class="container-fluid mt-4">
+   <div class="bg-images" style="height: 300px;">
+    <img style="width: 100%; height:550px; border-radius: 2%;" src="https://wallpaperaccess.com/full/699670.png" alt="" srcset="" height="" >
+
+
+<div class="overlay" style="position: absolute; margin-top: -30%; margin-left: 61%; width: 500px;">
+
+  <h1 style="font-family: 'Lobster', sans-serif; color: rgb(121, 30, 3);" >WE ARE FEANE</h1>
+
+  <p style="font-family:Verdana, Geneva, Tahoma, sans-serif;line-height: 20px; font-size: 18px; color: whitesmoke;"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry”s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+
+
+  <div class="btn rounded rounded-4" style="background-color: brown; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Read MORE</div>
+</div>
+</div>
+</div>
+
+
+</div>
+
+
+<!-- end-banner -->
+
+
+<div class="container-fluid bg-light rounded rounded-4" style="margin-top: 270px; padding-top: 100px; padding-bottom: 100px; margin-bottom: 300px; ">
+
+  <h1 style="color: #000; margin-left: 240px; font-family: 'Lobster', sans-serif; " >Book a Table</h1>
+
+  <script src="https://use.fontawesome.com/f59bcd8580.js"></script>
+  <div class="container">
+  <div class="row m-5 no-gutters shadow-lg">
+  <div class="col-md-6 d-none d-md-block">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9501.944619957083!2d-2.27772425!3d53.459771149999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bade198f6a2ab%3A0xa06b7a1e162e18f9!2sOld%20Trafford%2C%20Stretford%2C%20Manchester%2C%20UK!5e0!3m2!1sen!2sin!4v1705575693628!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <div class="col-md-6 bg-white p-5">
+ 
+  <div class="form-style">
+  <form>
+    <div class="form-group pb-3">    
+      <input type="text" placeholder="Name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">   
+    </div>
+    <div class="form-group pb-3">    
+      <input type="text" placeholder="Phone number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">   
+    </div>
+    <div class="form-group pb-3">   
+      <input type="email" placeholder="email" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="form-group pb-3">   
+      <input type="number" placeholder="How many persons?" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="form-group pb-3">   
+      <input type="date" placeholder="How many persons?" class="form-control" id="exampleInputPassword1">
+    </div>
+   
+     <div class="pb-2">
+    <button type="submit" class="btn btn-dark w-100 font-weight-bold mt-2">BOOK</button>
+     </div>
+  </form>
+    <div class="sideline text-dark" >OR</div>
+    <div>
+    <button type="submit" class="btn btn-primary w-100 font-weight-bold mt-2"><i class="fa fa-facebook" aria-hidden="true"></i> Login With Facebook</button>
+    </div>
+    <div class="pt-4 text-center text-dark">
+    Get Members Benefit. <a href="#">Sign Up</a>
+    </div>
+  </div>
+  
+  </div>
+  </div>
+  </div>
+
+
+
+</div>
+  
+
+
+<div class="container-fluid">
+  <h1>fjf</h1>
+
+</div>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+   
+
+   let foodContainer = document.querySelector('.food-container');
+
+const fooditem=[
+    {
+        FoodName: "CHEESE PARATHA",
+        foodimg: 'images/b1.jpg',
+        price: "RS 250",
+        type: "breakFast",
+        des: "These cheese flatbreads make for a wholesome breakfast or brunch. There are many many varieties of paratha made and this is one such tasty paratha which the kids are going to love."
+    },
+    {
+        FoodName: "ALOO PARATHA",
+        foodimg: 'images/b2.jpg',
+        price: "RS 200",
+        type: "breakFast",
+        des: "Aloo Paratha is a bread dish originating from the Indian subcontinent. It is a breakfast dish originated from the Punjab region."
+    },
+    {
+        FoodName: "EGG PARATHA",
+        foodimg: 'images/b3.jpg',
+        price: "RS 150",
+        type: "breakFast",
+        des: "Egg paratha recipe — easy breakfast, brunch or dinner recipe that is protein rich, healthy and tasty. Egg paratha is a kids' favorite, so i make it often for their after school snack. To make egg paratha, you can use ready paratha, roti or frozen paratha as well."
+    },
+    {
+        FoodName: "DAAL CHAWAL",
+        foodimg: 'images/l1.jpg',
+        price: "RS 400",
+        type: "Lunch",
+        des: "The most fascinating, fabulously fantastic and simple lightweight Pakistan’s most favorite dish, Daal Chawal Recipe (Daal Rice) is here at Sooperchef.pk. It’s simple, fast and delicious Pakistani Recipe."
+    },
+    {
+        FoodName: "PAKAL PANEER",
+        foodimg: 'images/l2.jpg',
+        price: "RS 400",
+        type: "Lunch",
+        des: "Palak Paneer is a popular Indian dish of Indian cottage cheese cubes in a mild, spiced smooth spinach sauce. This delicious creamy dish is made with fresh spinach leaves, paneer (firm cottage cheese), onions, tomatoes, herbs and spices."
+    },
+    {
+        FoodName: "ALOO GHOBI",
+        foodimg: 'images/l3.jpg',
+        price: "RS 200",
+        type: "Lunch",
+        des: "Aloo Gobi ki Sabzi is a classic Pakistani dish of Potatoes and Cauliflower cooked in savory spices and garnished with chillies and cilantro."
+    },
+    {
+        FoodName: "ALOO GOSHAT",
+        foodimg: 'images/l4.jpg',
+        price: "RS 200",
+        type: "Lunch",
+        des: "Aloo Gosht is a spicy, thick and creamy meat gravy that originates from Pakistani and North Indian cuisine.This gravy has potatoes cooked with lamb or mutton in a thick stew."
+    },
+
+    {
+        FoodName: "BANANA SHAKES",
+        foodimg: 'images/s1.jpg',
+        price: "RS 150",
+        type: "Shakes",
+        des: "You need less than five minutes to make this easy banana smoothie. Use our simple recipe on it’s own or use it as a base for other smoothies."
+    },
+    {
+        FoodName: "MANGO SHAKES",
+        foodimg: 'images/s2.jpg',
+        price: "RS 150",
+        type: "Shakes",
+        des: "Mango shake is a cool and tempting fruit drink prepared by simply blending ripe mango pieces, milk and sugar. To keep things simple and easy, this recipe primarily explains how to make mango shake with milk."
+    },
+
+    {
+        FoodName: "BIRIYANI",
+        foodimg: 'images/d1.jpg',
+        price: "RS 600",
+        type: "Dinner",
+        des: "Biryani is a mixed rice dish originating among the Muslims of the Indian subcontinent. It is made with Indian spices, rice, and meat, and sometimes, in addition, eggs and/or vegetables such as potatoes in certain regional varieties."
+    },
+    {
+        FoodName: "KORMA",
+        foodimg: 'images/d2.jpg',
+        price: "RS 250",
+        type: "Dinner",
+        des: "Korma is a gravy dish that is usually made with yogurt, lots of nuts and spices. A Mughal era original, Chicken Korma is the perfect dinner party dish that is easy, quick and a no fuss recipe."
+    }
+]
+
+
+const food = fooditem.map(item => {
+    const listitem = ` <div class="col-md-6 foodbox ${item.type}">
+    <!-- content div -->
+    <div class="content b my-2">
+        <!-- image -->
+        <div class="c-image">
+            <img src="${item.foodimg}" alt="">
+        </div>
+        <div class="t-n-p my-2">
+            <div class="header">  
+                <!-- title -->
+                <span class="title">${item.FoodName}</span>
+                <!-- price -->
+                <span class="price">${item.price}</span>
+            </div>
+            <!-- Description -->
+            <div class="des my-3 ">
+                <p>${item.des}</p>
+            </div>
+        </div>   
+    </div>
+</div>`;
+foodContainer.innerHTML += listitem;
+})
+const foodbox = document.querySelectorAll('.foodbox');
+const menu = document.querySelectorAll('ul');
+
+menu.forEach(m => {
+    m.addEventListener('click', e=>{
+        console.log(e.target.innerHTML)
+        foodbox.forEach(box => {
+            box.classList.add('d-none')
+            if(e.target.innerHTML === 'All')
+            {
+                box.classList.remove('d-none')
+            }
+            else if(e.target.innerHTML==='Breakfast'){
+                if(box.classList.contains('breakFast'))
+                {
+                    box.classList.remove('d-none')
+                }
+                
+            }
+            else if(e.target.innerHTML==='Lunch'){
+                if(box.classList.contains('Lunch'))
+                {
+                    box.classList.remove('d-none')
+                }
+                
+            }
+            else if(e.target.innerHTML==='Shakes'){
+                if(box.classList.contains('Shakes'))
+                {
+                    box.classList.remove('d-none')
+                }
+                
+            }
+            else if(e.target.innerHTML==='Dinner'){
+                if(box.classList.contains('Dinner'))
+                {
+                    box.classList.remove('d-none')
+                }
+                
+            }
+        })
+        
+    })
+})  
+
+ 
+</script>
+
+
+</body>
+
+</html>

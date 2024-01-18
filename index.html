@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jithin  mearn dec</title>
+    <!-- bootstap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- google fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+     
+      
+      .zoom {
+        padding: 0px;
+        transition: transform .2s;
+        margin: 0 auto;
+      }
+      
+      .zoom:hover {
+        -ms-transform: scale(0.6);
+        -webkit-transform: scale(0.6);
+        transform: scale(1.11); 
+      }
+
+
+      .sui {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.sui:hover {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.05);
+}
+      </style>
+
+
+    
+</head>
+<body>
+
+  
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-black">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#" style="font-family: 'Pacifico', cursive; margin-left: 60px;">Feane</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mb-2 mb-lg-0" style="margin-left: 340px;">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">HOME</a>
+                  </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">MENU</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">BOOK TABLE</a>
+              </li>
+            </ul>
+           
+            
+          </div>
+          <a href=""><i class="fa-solid fa-user me-4" style="color: #ffffff;"></i></a>
+          <a href=""><i class="fa-solid fa-cart-shopping me-4" style="color: #ffffff;"></i></a>
+          <a href=""><i class="fa-solid fa-magnifying-glass me-3" style="color: #ffffff;"></i></a>
+          <button class="btn btn-warning text-white rounded-5 ps-4 pe-4" type="submit">Order Online</button>
+        </div>
+      </nav>
+
+     
+
+
+      <!-- carosal -->
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators" style="margin-bottom: 150px;">
+          <button style="height: 10px; width: 10px; border-radius: 50%; margin-left: -850px; background-color: yellow;" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button style="height: 10px; width: 10px; border-radius: 50%; background-color: yellow;" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button style="height: 10px; width: 10px; border-radius: 50%; background-color: yellow;" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <img src="https://cdn.pixabay.com/photo/2023/06/26/04/24/ai-generated-8088660_1280.jpg" class="d-block w-100" alt="">
+          <div class="carousel-item active" style="margin-top: -250px;">
+           
+            <div class="carousel-caption d-none d-md-block" style="margin-left: -50px;">
+              <h1 style="font-family: 'Pacifico', cursive; text-align: left;">Fast Food Restaurent</h1>
+              <p style="text-align: left;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos necessitatibus minima qui, itaque neque voluptates beatae iste vitae molestias repellendus laboriosam eligendi rerum a laudantium, labore, soluta incidunt ipsa earum.</p>
+              <button style="margin-left: -650px;" class="btn btn-warning text-white rounded-5 ps-4 pe-4" type="submit">Order Now</button>
+
+            </div>
+          </div>
+          <div class="carousel-item" style="margin-top: -250px;">
+           
+            <div class="carousel-caption d-none d-md-block" style="margin-left: -50px;">
+                <h1 style="font-family: 'Pacifico', cursive; text-align: left;">Fast Food Restaurent</h1>
+                <p style="text-align: left;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos necessitatibus minima qui, itaque neque voluptates beatae iste vitae molestias repellendus laboriosam eligendi rerum a laudantium, labore, soluta incidunt ipsa earum.</p>
+                <button style="margin-left: -650px;" class="btn btn-warning text-white rounded-5 ps-4 pe-4" type="submit">Order Now</button>
+  
+              </div>
+          </div>
+          <div class="carousel-item" style="margin-top: -250px;">
+           
+            <div class="carousel-caption d-none d-md-block" style="margin-left: -50px;">
+                <h1 style="font-family: 'Pacifico', cursive; text-align: left;">Fast Food Restaurent</h1>
+                <p style="text-align: left;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos necessitatibus minima qui, itaque neque voluptates beatae iste vitae molestias repellendus laboriosam eligendi rerum a laudantium, labore, soluta incidunt ipsa earum.</p>
+                <button style="margin-left: -650px;" class="btn btn-warning text-white rounded-5 ps-4 pe-4" type="submit">Order Now</button>
+  
+              </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
+
+      <!-- cards1 -->
+      <br>
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-5">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <div class="zoom">
+                    <img src="https://www.healthylifetrainer.com/wp-content/uploads/2023/03/fried-chicken-burger-sandwich-07.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body bg-dark">
+                      <h1 class="card-title text-white" style="font-family: 'Pacifico', cursive;">Card title</h1>
+                      <h1 class="card-text text-white"style="font-family: 'Pacifico', cursive;">20% OFF</h1>
+                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                      <button class="btn btn-warning text-white rounded-5 ps-4 pe-4" type="submit">Order Now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    </div>
+
+    <div class="col-5">
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <div class="zoom">
+                <img src="https://www.dontgobaconmyheart.co.uk/wp-content/uploads/2020/04/crispy-chicken-burger.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body bg-dark">
+                  <h1 class="card-title text-white" style="font-family: 'Pacifico', cursive;">Card title</h1>
+                  <h1 class="card-text text-white" style="font-family: 'Pacifico', cursive;">15% OFF</h1>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  <button class="btn btn-warning text-white rounded-5 ps-4 pe-4" type="submit">Order Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- menu -->
+    <br><br>
+    <div class="buttons ">
+        <h1 style="font-family: 'Pacifico', cursive; text-align: center;">Our Menu</h1>
+        <div class="text-center">
+        <button class="btn btn-outline-white text-dark rounded-5 ps-4 pe-4" type="submit">All</button>
+        <button class="btn btn-outline-white text-dark rounded-5 ps-4 pe-4" type="submit">Burger</button>
+        <button class="btn btn-outline-white text-dark rounded-5 ps-4 pe-4" type="submit">Pizza</button>
+        <button class="btn btn-outline-white text-dark rounded-5 ps-4 pe-4" type="submit">Pasta</button>
+        <button class="btn btn-outline-white text-dark rounded-5 ps-4 pe-4" type="submit">Fries</button>
+    </div>
+    <!-- cards -->
+
+    <br>
+    
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-3">
+    <div class="card" style="width: 20rem;">
+      <div class="sui">
+        <img src="https://www.butter-n-thyme.com/wp-content/uploads/2023/04/Aussie-Burger.jpg" class="card-img-top" alt="..."></div>
+      <div class="card-body">
+        <h5 class="fw-bold">Aussie Burger</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolorem, eveniet libero recusandae animi, suscipit aperiam ratione quo molestias sed velit repudiandae aliquid eligendi reprehenderit hic ex necessitatibus perspiciatis voluptas!</p>
+        
+        <p>$200 <a style="margin-left: 200px;" href=""><i class="fa-solid fa-cart-shopping me-4" style="color: #dfb602;"></i></a></p>
+        
+      </div>
+    </div>
+  </div>
+  <div class="col-1"></div>
+  <div class="col-3">
+    <div class="card" style="width: 20rem;">
+      <div class="sui">
+        <img src="https://www.butter-n-thyme.com/wp-content/uploads/2023/04/Aussie-Burger.jpg" class="card-img-top" alt="..."></div>
+      <div class="card-body">
+        <h5 class="fw-bold">BÁNH MÌ BURGER</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolorem, eveniet libero recusandae animi, suscipit aperiam ratione quo molestias sed velit repudiandae aliquid eligendi reprehenderit hic ex necessitatibus perspiciatis voluptas!</p>
+        
+        <p>$200 <a style="margin-left: 200px;" href=""><i class="fa-solid fa-cart-shopping me-4" style="color: #dfb602;"></i></a></p>
+        
+      </div>
+    </div>
+  </div>
+  <div class="col-1"></div>
+   <div class="col-3">
+    <div class="card" style="width: 20rem;">
+      <div class="sui">
+        <img src="https://www.butter-n-thyme.com/wp-content/uploads/2023/04/Aussie-Burger.jpg" class="card-img-top" alt="..."></div>
+      <div class="card-body">
+        <h5 class="fw-bold">BEYOND BURGER</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolorem, eveniet libero recusandae animi, suscipit aperiam ratione quo molestias sed velit repudiandae aliquid eligendi reprehenderit hic ex necessitatibus perspiciatis voluptas!</p>
+        
+        <p>$200 <a style="margin-left: 200px;" href=""><i class="fa-solid fa-cart-shopping me-4" style="color: #dfb602;"></i></a></p>
+        
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+  <br>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-3">
+      <div class="card" style="width: 20rem;">
+        <div class="sui">
+          <img src="https://www.butter-n-thyme.com/wp-content/uploads/2023/04/Aussie-Burger.jpg" class="card-img-top" alt="..."></div>
+        <div class="card-body">
+          <h5 class="fw-bold">BIG MAC BURGER</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolorem, eveniet libero recusandae animi, suscipit aperiam ratione quo molestias sed velit repudiandae aliquid eligendi reprehenderit hic ex necessitatibus perspiciatis voluptas!</p>
+          
+          <p>$200 <a style="margin-left: 200px;" href=""><i class="fa-solid fa-cart-shopping me-4" style="color: #dfb602;"></i></a></p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-1"></div>
+    <div class="col-3">
+      <div class="card" style="width: 20rem;">
+        <div class="sui">
+          <img src="https://www.butter-n-thyme.com/wp-content/uploads/2023/04/Aussie-Burger.jpg" class="card-img-top" alt="..."></div>
+        <div class="card-body">
+          <h5 class="fw-bold">BISON BURGER</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolorem, eveniet libero recusandae animi, suscipit aperiam ratione quo molestias sed velit repudiandae aliquid eligendi reprehenderit hic ex necessitatibus perspiciatis voluptas!</p>
+          
+          <p>$200 <a style="margin-left: 200px;" href=""><i class="fa-solid fa-cart-shopping me-4" style="color: #dfb602;"></i></a></p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-1"></div>
+     <div class="col-3">
+      <div class="card" style="width: 20rem;">
+        <div class="sui">
+          <img src="https://www.butter-n-thyme.com/wp-content/uploads/2023/04/Aussie-Burger.jpg" class="card-img-top" alt="..."></div>
+        <div class="card-body">
+          <h5 class="fw-bold">BLACK BEAN BURGERS</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolorem, eveniet libero recusandae animi, suscipit aperiam ratione quo molestias sed velit repudiandae aliquid eligendi reprehenderit hic ex necessitatibus perspiciatis voluptas!</p>
+          
+          <p>$200 <a style="margin-left: 200px;" href=""><i class="fa-solid fa-cart-shopping me-4" style="color: #dfb602;"></i></a></p>
+          
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+
+
+<br>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-3">
+        <div class="card" style="width: 20rem;">
+          <div class="sui">
+            <img src="https://www.butter-n-thyme.com/wp-content/uploads/2023/04/Aussie-Burger.jpg" class="card-img-top" alt="..."></div>
+          <div class="card-body">
+            <h5 class="fw-bold">BLUE CHEESE BURGER</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolorem, eveniet libero recusandae animi, suscipit aperiam ratione quo molestias sed velit repudiandae aliquid eligendi reprehenderit hic ex necessitatibus perspiciatis voluptas!</p>
+            
+            <p>$200 <a style="margin-left: 200px;" href=""><i class="fa-solid fa-cart-shopping me-4" style="color: #dfb602;"></i></a></p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-1"></div>
+      <div class="col-3">
+        <div class="card" style="width: 20rem;">
+          <div class="sui">
+            <img src="https://www.butter-n-thyme.com/wp-content/uploads/2023/04/Aussie-Burger.jpg" class="card-img-top" alt="..."></div>
+          <div class="card-body">
+            <h5 class="fw-bold">BRATWURST BURGER</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolorem, eveniet libero recusandae animi, suscipit aperiam ratione quo molestias sed velit repudiandae aliquid eligendi reprehenderit hic ex necessitatibus perspiciatis voluptas!</p>
+            
+            <p>$200 <a style="margin-left: 200px;" href=""><i class="fa-solid fa-cart-shopping me-4" style="color: #dfb602;"></i></a></p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-1"></div>
+       <div class="col-3">
+        <div class="card" style="width: 20rem;">
+          <div class="sui">
+          <img src="https://www.butter-n-thyme.com/wp-content/uploads/2023/04/Aussie-Burger.jpg" class="card-img-top" alt="..."></div>
+          <div class="card-body">
+            <h5 class="fw-bold">BREAKFAST BURGER</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolorem, eveniet libero recusandae animi, suscipit aperiam ratione quo molestias sed velit repudiandae aliquid eligendi reprehenderit hic ex necessitatibus perspiciatis voluptas!</p>
+            
+            <p>$200 <a style="margin-left: 200px;" href=""><i class="fa-solid fa-cart-shopping me-4" style="color: #dfb602;"></i></a></p>
+            
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+    
+    </div>
+
+
+<!-- banner1 -->
+<br><br>
+    <div class="row" style="background-color: rgb(44, 45, 61);">
+      <div class="col-1"></div>
+      <div class="col-5"><img src="https://static.vecteezy.com/system/resources/previews/016/461/019/original/burger-3d-illustration-png.png" alt="burger" height="550px"></div>
+      <div class="col-5 text-white" style="margin-top: 120px;"><h2 style="font-family: 'Pacifico', cursive;">We Are Feane</h2><br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis laboriosam molestiae molestias ipsum vero voluptatem tempore perferendis cum nihil eos, aperiam non magnam impedit facilis dignissimos repellat, repudiandae corporis quisquam.</p><br><button class="btn btn-warning text-white rounded-5 ps-4 pe-4" type="submit">Read More</button></div>
+      <div class="col-1"></div>
+
+    </div>
+
+
+  <!-- form and map -->
+  <br><br><br>
+  <div class="row">
+    <div class="col-1"></div>
+    <!-- form -->
+    <div class="col-5">
+      <h1 style="font-family: 'Pacifico', cursive;">Book A Table</h1>
+      <br>
+      <form>
+        <div class="form-row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Your Name">
+          </div>
+          <br>
+          <div class="col">
+            <input type="number" class="form-control" placeholder="Phone Number">
+          </div>
+          <br>
+          <div class="col">
+            <input type="email" class="form-control" placeholder="Your Email">
+          </div>
+          <br>
+          <div class="col">
+            <select class="form-control">
+              <option selected hidden>How Many Persons</option>
+              <option>2</option>
+              <option>4</option>
+              <option>6</option>
+              <option>8</option>
+              <option>16</option>
+            </select>
+          </div>
+          <br>
+          <div class="col">
+            <input type="date" class="form-control" placeholder="">
+          </div>
+          <br>
+          <button class="btn btn-warning text-white rounded-5 ps-4 pe-4" type="submit">Book Now</button>
+        </div>
+      </form>
+
+
+    </div>
+
+
+    <!-- map -->
+    <div class="col-5" style="margin-top: 80px;">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49675.6689852097!2d1.3558275602911487!3d38.90730495802988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129946bc6d9d1985%3A0xb6ca1af29357fa88!2s07800%20Ibiza%2C%20Balearic%20Islands%2C%20Spain!5e0!3m2!1sen!2sin!4v1705595226615!5m2!1sen!2sin" width="600" height="285" style="border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    <div class="col-1"></div>
+  </div>
+
+  <!-- customer review -->
+  <br><br><br><br><br>
+  <h1 style="font-family: 'Pacifico', cursive; text-align: center;">What Says Our Customer</h1>
+
+
+  <br>
+    <div class="container-fluid">
+
+      <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card-wrapper container-sm d-flex  justify-content-around">
+            <div class="card  " style="width: 30rem;">
+        <div class="card-body">
+          <p class="card-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum rem praesentium pariatur in optio alias eos dolor deleniti minima aliquam! Deleniti dolorem iure nostrum quam esse. Reiciendis fugit repellendus quos!</p>
+          <h5 class="card-title">Rahul Dev</h5>
+          <h6>Magna aliqua</h6>
+          <br>
+          <img src="./rahul.jpg" class="card-img-top" alt="...">
+
+ 
+          
+        </div>
+      </div>
+      
+      
+      <div class="card" style="width: 30rem;">
+        <div class="card-body ">
+          <p class="card-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum rem praesentium pariatur in optio alias eos dolor deleniti minima aliquam! Deleniti dolorem iure nostrum quam esse. Reiciendis fugit repellendus quos!</p>
+          <h5 class="card-title">Abhinav Raju Madhav</h5>
+          <h6>Magna aliqua</h6>
+            <br>
+            <img src="./abhi.jpg" class="card-img-top" alt="..." >
+        </div>
+              </div>
+
+      </div>
+          </div>
+
+
+
+          <div class="carousel-item">
+            <div class="card-wrapper container-sm d-flex   justify-content-around">
+            <div class="card  " style="width: 30rem;">
+        <div class="card-body">
+          <p class="card-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum rem praesentium pariatur in optio alias eos dolor deleniti minima aliquam! Deleniti dolorem iure nostrum quam esse. Reiciendis fugit repellendus quos!</p>
+          <h5 class="card-title">Jithin</h5>
+          <h6>Magna aliqua</h6>
+            <br>
+            <img src="./jithin.jpg" class="card-img-top" alt="...">
+          
+  
+            
+       
+          
+        </div>
+      </div>
+      
+      <div class="card" style="width: 30rem;">
+        <div class="card-body" >
+          <p class="card-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum rem praesentium pariatur in optio alias eos dolor deleniti minima aliquam! Deleniti dolorem iure nostrum quam esse. Reiciendis fugit repellendus quos!</p>
+          <h5 class="card-title">Mithun</h5>
+          <h6>Magna aliqua</h6>
+          
+            
+            <br>
+            <img src="./mithun.jpg" class="card-img-top" alt="...">
+        </div>
+        </div>
+    
+          </div>
+          </div>
+        </div>
+
+
+        <button style="margin-top: 450px; margin-left: 500px;" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button style="margin-top: 450px; margin-right: 500px;" class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+<!-- footer 1 -->
+<br><br><br><br><br>
+<!-- Footer -->
+<footer class="text-center text-lg-start text-muted pt-1" style="background-color: rgb(44, 45, 61);">
+
+
+  
+  <section class="">
+    <div class="container text-center text-md-start mt-5 text-white">
+      <!-- Grid row -->
+      <div class="row mt-3">
+
+
+        <div class="col-md-4 col-lg-3 col-xl-4 mx-auto mb-md-0 mb-4 text-white">
+          <!-- Links -->
+          <h2 class="text-uppercase fw-bold mb-4" style="font-family: 'Pacifico', cursive;">Contact us</h2>
+          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-4 mx-auto mb-4">
+          <!-- Content -->
+          <h2 class="text-uppercase fw-bold mb-4" style="font-family: 'Pacifico', cursive;">
+            Feane
+          </h2>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-4 mx-auto mb-md-0 mb-4 text-white">
+          <!-- Links -->
+          <h3 class="text-uppercase fw-bold mb-4" style="font-family: 'Pacifico', cursive;">Opening Hours</h3>
+          <p> Everyday</p>
+          <p>10:00 AM - 11:00 PM</p>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+</footer>
+
+<!-- footer 2 -->
+<footer class="text-center" style="background-color: rgb(44, 45, 61);">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a
+      data-mdb-ripple-init
+        class="btn text-dark btn-floating m-1"
+        style="background-color: #ffffff;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a
+        data-mdb-ripple-init
+        class="btn text-dark btn-floating m-1"
+        style="background-color: #ffffff;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a
+        data-mdb-ripple-init
+        class="btn text-dark btn-floating m-1"
+        style="background-color: #ffffff;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a
+        data-mdb-ripple-init
+        class="btn text-dark btn-floating m-1"
+        style="background-color: #ffffff;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a
+        data-mdb-ripple-init
+        class="btn text-dark btn-floating m-1"
+        style="background-color: #ffffff;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+      <!-- Github -->
+      <a
+        data-mdb-ripple-init
+        class="btn text-dark btn-floating m-1"
+        style="background-color: #ffffff;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+  <div class="text-center p-3" style="background-color: rgb(44, 45, 61); color: #ffffff;">
+    © 2020 All Rights Reserved By
+  </div>
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgb(44, 45, 61); color: #ffffff;">
+    ©
+    Distributed By 
+  </div>
+  <!-- Copyright -->
+</footer>
+
+
+</body>
+</html>
